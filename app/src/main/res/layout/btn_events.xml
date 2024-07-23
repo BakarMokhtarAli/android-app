@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:backgroundTint="@color/blue"
+            android:layout_margin="5dp"
+            android:onClick="save"
+            android:textColor="@color/white"
+            android:typeface="sans"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:backgroundTint="@color/warning"
+            android:layout_margin="5dp"
+            android:onClick="update"
+            android:textColor="@color/white"
+            android:typeface="sans"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btn_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:backgroundTint="@color/wrong"
+            android:layout_margin="5dp"
+            android:onClick="delete"
+            android:textColor="@color/white"
+            android:typeface="sans"
+            android:textStyle="bold"
+            />
+        <Button
+            android:id="@+id/btn_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show info"
+            android:backgroundTint="@color/info"
+            android:layout_margin="5dp"
+            android:onClick="info"
+            android:textColor="@color/white"
+            android:typeface="sans"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:inputType="number"
+            android:paddingLeft="5dp"
+            android:layout_margin="5dp"
+            />
+        <Button
+            android:id="@+id/btn_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:backgroundTint="@color/search"
+            android:layout_margin="5dp"
+            android:onClick="show"
+            android:textColor="@color/white"
+            android:typeface="sans"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

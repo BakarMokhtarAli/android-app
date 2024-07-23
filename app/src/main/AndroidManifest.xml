@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FaciltyMagazine"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".SignUp"
+            android:exported="false"
+            android:label="New User Account"
+            android:parentActivityName=".Login"  />
+        <activity
+            android:name=".Subscription"
+            android:exported="false"
+            android:label="Make Subscription"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Magazine"
+            android:exported="false"
+            android:label="New Magazine"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Comments"
+            android:exported="false"
+            android:label="Make Comments"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Articales"
+            android:exported="false"
+            android:label="New Articles"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UsersManage"
+            android:exported="false"
+            android:label="New User Account"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Table_info"
+            android:exported="false"
+            android:label="Table View"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Dashboard Faculty Magazine"/>
+    </application>
+
+</manifest>

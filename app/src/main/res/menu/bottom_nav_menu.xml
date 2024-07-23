@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_magazine"
+        android:title="Magazine" />
+    <item
+        android:id="@+id/nav_articles"
+        android:title="Articale" />
+
+    <item
+        android:id="@+id/nav_comments"
+        android:title="Comments"/>
+    <item
+        android:id="@+id/nav_subscription"
+        android:title="Subscription" />
+    <item
+        android:id="@+id/nav_usr"
+        android:title="Users"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="LogOut"/>
+</menu>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersManage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New User Account"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            />
+        <EditText
+            android:id="@+id/u_fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full name"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:inputType="text"
+            />
+        <EditText
+            android:id="@+id/u_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email address"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:inputType="textEmailAddress"
+            />
+        <EditText
+            android:id="@+id/u_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password ..."
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:inputType="textPassword"
+            />
+        <Spinner
+            android:id="@+id/u_type"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/userPrevilage"/>
+        <EditText
+            android:id="@+id/u_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Register Date"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:inputType="date"
+            />
+
+        <include
+            layout="@layout/btn_events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

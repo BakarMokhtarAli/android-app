@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Scroller bar-->
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Articales"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/articles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Articles"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            />
+        <EditText
+            android:id="@+id/titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Article Title"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:inputType="text"
+            />
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Article Content"
+            android:gravity="left|top"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:inputType="textMultiLine"
+            android:maxLines="5"
+            android:ems="5"
+            android:longClickable="false"
+            android:scrollbars="vertical"
+            />
+        <EditText
+            android:id="@+id/publiccation_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Publiccation Date"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:inputType="date"
+            />
+        <Spinner
+            android:id="@+id/magasozeID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/btn_events"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

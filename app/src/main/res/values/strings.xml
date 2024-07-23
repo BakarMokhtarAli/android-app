@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Facilty Magazine</string>
+    <string name="manage_users">Manage Users</string>
+    <string name="logout">Logout</string>
+
+    <string name="save">This information is correctly registered</string>
+    <string name="already_save">This information has been already exist</string>
+    <string name="update">This information has been correctly modified</string>
+    <string name="not_update">This information did not make any changes</string>
+    <string name="delete">This information has been deleted correctly</string>
+    <string name="not_deleted">TThis information can not be deleted</string>
+
+    <!--to toggle the open close button
+        of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="login">Login</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="enter_password">Enter password</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string-array name="userPrevilage">
+        <item>faculty</item>
+        <item>editor</item>
+        <item>admin</item>
+    </string-array>
+</resources>
